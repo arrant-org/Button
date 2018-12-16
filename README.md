@@ -14,11 +14,12 @@ Button Component
 ```js
 import Button from '@arrant/button'
 
-<Button></Button>
+<Button>Button</Button>
 ```
 
 ## Props
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| color | String | red | color |
+| Name | Type | Default | Description | Value |
+| --- | --- | --- | --- | --- |
+| color | String | red | Button colors | [theme colors](https://github.com/arrant-org/theme/blob/master/lib/colors.js) |
+| variant | String | contained | Button Styled | contained/outlined |

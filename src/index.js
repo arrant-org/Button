@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledButton from './index.style'
+import { colors } from '@arrant/theme'
 
 class Button extends React.Component {
   render () {
@@ -13,11 +14,13 @@ class Button extends React.Component {
 }
 
 Button.PropTypes = {
-  
+  color: PropTypes.string,
+  variant: PropTypes.oneOf['contained', 'outlined']
 }
 
 Button.defaultProps = {
-
+  color: colors.red,
+  variant: 'contained'
 }
 
 export default Button
