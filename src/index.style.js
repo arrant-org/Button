@@ -13,12 +13,20 @@ const outlined = css`
   border: 1px solid ${props => colors[props.color] ? colors[props.color] : colors.red}
 `
 
+const fit = css`
+  width: 100%;
+  justify-content: center;
+`
+
 const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
   ${props => props.variant === 'contained' ? contained : outlined};
-
+  ${props => props.fit ? fit : null}
   &:disabled {
     opacity: 0.5;
     cursor: no-drop;
