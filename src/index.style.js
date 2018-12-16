@@ -7,4 +7,3 @@ const StyledButton = styled.button`
 `
 
 export default StyledButton
-
