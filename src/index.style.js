@@ -25,6 +25,7 @@ const StyledButton = styled.button`
   position: relative;
   display: inline-flex;
   max-width: 100%;
+  justify-content: center;
   ${props => props.variant === 'contained' ? contained : outlined};
   ${props => props.fit ? fit : null}
   &:disabled {
