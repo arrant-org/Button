@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import Story from '../.storybook/story'
 
 import Button from '.'
 
@@ -9,27 +10,27 @@ const ColoredButtonInfo = 'The following colors are supported - https://github.c
 const FitButtonInfo = 'You can fit the button width to the container.'
 const SizeButtonInfo = 'The following sizes are supported - `small`, `medium`, `large`.'
 
-const VariantButton = () => <div>
+const VariantButton = () => <Story>
   <Button variant='contained'>Red</Button>
   <Button variant='outlined'>Red</Button>
-</div>
+</Story>
 
-const ColoredButton = () => <div>
+const ColoredButton = () => <Story>
   <Button color='red'>Red</Button>
   <Button color='google-blue'>Google Blue</Button>
   <Button color='green'>Green</Button>
   <Button color='microsoft-yellow'>Microsoft Yellow</Button>
-</div>
+</Story>
 
-const FitButton = () => <div>
+const FitButton = () => <Story>
   <Button fit>Fit</Button>
-</div>
+</Story>
 
-const SizeButton = () => <div>
+const SizeButton = () => <Story>
   <Button size='small'>Small</Button>
   <Button size='medium'>Medium</Button>
   <Button size='large'>Large</Button>
-</div>
+</Story>
 
 storiesOf('Button', module)
   .add('Variant', withInfo(VariantButtonInfo)(VariantButton))
