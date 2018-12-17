@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { colors } from '@arrant/theme'
+import { colors, sizes } from '@arrant/theme'
 
 const contained = css`
   background: ${props => colors[props.color] ? colors[props.color] : colors.red};
@@ -28,6 +28,7 @@ const StyledButton = styled.button`
   justify-content: center;
   ${props => props.variant === 'contained' ? contained : outlined};
   ${props => props.fit ? fit : null}
+  ${props => sizes[props.size]}
   &:disabled {
     opacity: 0.5;
     cursor: no-drop;

@@ -23,3 +23,4 @@ import Button from '@arrant/button'
 | --- | --- | --- | --- | --- |
 | color | String | red | Button colors | [theme colors](https://github.com/arrant-org/theme/blob/master/lib/colors.js) |
 | variant | String | contained | Button Styled | contained/outlined |
+| size | String | medium | Button size | small/medium/large |

@@ -16,13 +16,15 @@ class Button extends React.Component {
 Button.PropTypes = {
   color: PropTypes.string,
   variant: PropTypes.oneOf['contained', 'outlined'],
-  fit: PropTypes.bool
+  fit: PropTypes.bool,
+  size: PropTypes.oneOf['small', 'medium', 'large']
 }
 
 Button.defaultProps = {
   color: colors.red,
   variant: 'contained',
-  fit: false
+  fit: false,
+  size: 'medium'
 }
 
 export default Button
